@@ -21,3 +21,12 @@ En cuanto a los productos, debes crear los endpoints necesarios para generar una
 - Cargar los productos del archivo Excel a la base de datos
 - Crear un archivo README.md con las instrucciones para ejecutar la aplicación
 
+### Adicionales
+- Usar JWT para manejar la autenticación de usuarios
+- Encriptación de contraseñas (Lo puedes manejar en el front o en el back, en la base de datos la contraseña debe estar encriptada)
+- Usar Typescript
+- Crear endpoints y ventanas necesarias para rescatar una contraseña olvidada y actualizar la contraseña
+- Uso de algún framework para la construcción del backend en NodeJS (Por ejemploExpress o Fastify; NestJS)
+- Uso de algún ORM para la gestión de los datos (Por ejemplo, Sequelize, TypeORM, Elloquent)
+- Validar la autentificación del usuario al intentar acceder a las rutas de producto. Un usuario no autenticado (O con un token inválido/vencido) no debe poder acceder a las rutas de los productos, y debe recibir un error 401 Unauthorized
+- Uso de alguna herramienta para generar documentación (Por ejemplo Swagger o Postman)
