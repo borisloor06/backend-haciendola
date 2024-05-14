@@ -13,8 +13,10 @@ import { ConfigService } from '@nestjs/config';
           username: configService.get<string>('DB_USER'),
           password: configService.get<string>('DB_PASS'),
           database: configService.get<string>('DB_DATABASE'),
-          entities: [__dirname + '/../**/*.entity{.ts,.js}'],
+          entities: [__dirname + '/**/*.entity{.ts,.js}'],
           synchronize: false,
+          autoLoadEntities: true,
+          logging: true,
         };
       },
       inject: [ConfigService],
