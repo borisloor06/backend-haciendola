@@ -12,7 +12,7 @@ export class AuthService {
   ) {}
 
   async validateUser(username: string, pass: string) {
-    const user = await this.usersService.findByUsername(username);
+    const user = await this.usersService.findByEmail(username);
     if (!user) {
       return null;
     }

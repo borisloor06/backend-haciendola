@@ -37,6 +37,10 @@ export class UserService {
     return this.userRepository.findOneBy({ username });
   }
 
+  findByEmail(email: string) {
+    return this.userRepository.findOneBy({ email });
+  }
+
   update(id: number, updateUserDto: UpdateUserDto) {
     const exists = this.userRepository.existsBy({ id });
     if (!exists) {
